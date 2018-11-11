@@ -22,7 +22,7 @@ This project was developed following the tutorial [Como desarrollar una Aplicaci
 
 Main activity | View message result | View message Toast
 ------------ | ------------- | -------------
-![Main activity](/images/mainActivity.png) | ![View message result](/images/viewMessageResult.png)| ![View message Toast](/images/viewMessageToast.png)
+![Main activity](/images/mainActivity.png) | ![View message result](/images/viewSmsResult.png)| ![View message Toast](/images/viewSmsToast.png)
 
 ## Credits
 
