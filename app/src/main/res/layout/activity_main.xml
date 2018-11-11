@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="MATHEMATICAL OPERATIONS"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="139dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/math" />
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="190dp"
+        android:layout_height= "40dp"
+        android:inputType="number"
+        android:hint="Enter first number"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="190dp"
+        android:layout_height= "40dp"
+        android:inputType="number"
+        android:hint="Enter second number"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@android:color/white"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSum"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/btnSum"
+            android:layout_toEndOf="@+id/btnSum"
+            android:text="-"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/btnSubtract"
+            android:layout_toEndOf="@+id/btnSubtract"
+            android:text="*"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btnDivision"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/btnMultiply"
+            android:layout_toEndOf="@+id/btnMultiply"
+            android:text="/"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:onClick="onClick"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/labelResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+
+
+</LinearLayout>
